@@ -19,15 +19,15 @@ class App : Application() {
         super.onCreate()
         appContext = applicationContext
         //Initialize the Koin for Dependency Injection
-        startKoin {
-            androidLogger(Level.DEBUG)
-            androidContext(this@App)
-            modules(
-                listOf(
-                    productAPIModule,
-                    retrofitModule
-                )
-            )
-        }
+//        startKoin {
+//            androidLogger(Level.DEBUG)
+//            androidContext(this@App)
+//            modules(
+//                listOf(
+//                )
+//            )
+//        }
+//        productAPIModule,
+//        retrofitModule
     }
 }
