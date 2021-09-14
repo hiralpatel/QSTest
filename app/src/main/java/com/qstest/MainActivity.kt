@@ -42,8 +42,7 @@ class MainActivity : AppCompatActivity() {
         getVal(refDB, ID, "product-price")
     }
 
-    private fun getVal(refDB: DatabaseReference, ID: String, key: String): String {
-        var value: String? = null
+    private fun getVal(refDB: DatabaseReference, ID: String, key: String) {
         refDB.child(key).child(ID)
             .addValueEventListener(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
@@ -77,6 +76,5 @@ class MainActivity : AppCompatActivity() {
                     Log.e("onCancelled", " cancelled")
                 }
             })
-        return value.toString()
     }
 }
