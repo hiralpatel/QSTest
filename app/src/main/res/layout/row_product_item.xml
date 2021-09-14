@@ -6,7 +6,7 @@
     android:padding="@dimen/_8sdp">
 
     <com.makeramen.roundedimageview.RoundedImageView
-        android:id="@+id/prodImgView"
+        android:id="@+id/productImgView"
         android:layout_width="@dimen/_48sdp"
         android:layout_height="@dimen/_48sdp"
         android:scaleType="centerCrop"
@@ -17,6 +17,30 @@
         app:riv_tile_mode="repeat" />
 
     <TextView
+        android:id="@+id/productNameTxtView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_toStartOf="@id/productPriceTxtView"
+        android:layout_toEndOf="@id/productImgView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/productDescTxtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/productNameTxtView"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_toEndOf="@id/productImgView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/productPriceTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 </RelativeLayout>

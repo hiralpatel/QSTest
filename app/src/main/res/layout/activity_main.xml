@@ -22,6 +22,7 @@
         app:layout_constraintGuide_end="@dimen/_16sdp" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productRecyclerView"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:paddingTop="@dimen/_16sdp"
