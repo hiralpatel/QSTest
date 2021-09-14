@@ -47,4 +47,19 @@ dependencies {
     implementation 'com.intuit.ssp:ssp-android:1.0.6'
     // Rounded imageview
     implementation 'com.makeramen:roundedimageview:2.3.0'
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.6.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    // Dependency injection Koin main features for Android
+    implementation 'org.koin:koin-android:2.1.1'
+    implementation 'org.koin:koin-android-viewmodel:2.0.0-rc-2'
+    implementation 'org.koin:koin-androidx-scope:2.1.1'
 }
