@@ -1,8 +1,9 @@
 package com.qstest.model
 
 data class Product(
-    val name: String?,
-    val desc: String?,
-    val img: String?,
-    val price: String?
+    val id: String,
+    var name: String?,
+    var desc: String?,
+    var img: String?,
+    var price: String?
 )
